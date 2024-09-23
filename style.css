@@ -1,0 +1,194 @@
+body, html {
+  background-color: black;
+  color: white;
+  scroll-behavior: smooth;
+  background-image: url('https://i.gifer.com/5ARz.gif');
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Optional: Fix the background image during scroll */
+}
+ .sidebar {
+     height: 100%;
+     width: 250px;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background-color: #0b1a3b;
+     background-image: url(https://i.ibb.co/G9fXHhr/1eeb45b0-840b-46af-96b5-f9f9318513dc.png);
+     overflow-x: hidden;
+     padding-top: 20px;
+ }
+ 
+ .sidebar h2 {
+     color: white;
+     text-align: center;
+ }
+ 
+ .sidebar a {
+     padding: 10px 15px;
+     text-decoration: none;
+     font-size: 18px;
+     color: rgb(0, 253, 253);
+     display: block;
+ }
+ 
+ .sidebar a:hover {
+     color: white;
+ }
+ 
+ .content {
+     margin-left: 250px;
+     padding: 1px 16px;
+     height: 1000px;
+ }
+ 
+ @media screen and (max-width: 700px) {
+     .sidebar {
+         width: 100%;
+         height: auto;
+         position: relative;
+     }
+     .sidebar a {float: left;}
+     .content {margin-left: 0;}
+ }
+ 
+ @media screen and (max-width: 400px) {
+     .sidebar a {
+         text-align: center;
+         float: none;
+     }
+ }
+   .background-image {
+    height: 20%;
+    width: 76%;
+   
+   }
+   .image-container {
+     position: relative;
+     display: inline-block; 
+     margin: 10px; 
+   }
+ 
+   .hover-text {
+     position: absolute;
+     width: 100%;
+     bottom: 0;
+     left: 0;
+     background: rgba(0, 0, 0, 0.5); 
+     color: #fff; 
+     visibility: hidden; 
+     text-align: center;
+     padding: 10px 0; 
+   }
+ 
+   .image-container:hover .hover-text {
+     visibility: visible; 
+   }
+ .home-info {
+     background-color: rgba(0, 0, 0, 0.76);
+     text-align: left;
+     border-bottom: 20px solid transparent;
+ }
+ #about {
+   text-align: left;
+     border-bottom: 30px solid transparent;
+     border-top: 2px solid white;
+ }
+ #favorites {
+   text-align: left;
+     border-bottom: 100px solid transparent;
+     border-top: 2px solid 	white;
+ }
+ #projects {
+   text-align: left;
+     border-bottom: 30px solid transparent;
+     border-top: 2px solid 	white;
+ }
+ #contact {
+   text-align: left;
+     border-bottom: 50px solid transparent;
+     border-top: 2px solid 	white;
+ }
+ .side-image {
+   position: fixed;
+   right: 0;
+   left: 80%;
+ }
+ #social-media-links ul {
+   list-style-type: none; 
+   padding: 0;
+ }
+ 
+ #social-media-links li {
+   display: inline; 
+   margin-right: 10px; 
+ }
+ 
+ #social-media-links a {
+   text-decoration: none; 
+   color: #007bff; 
+ }
+ 
+ #social-media-links a:hover, #social-media-links a:focus {
+   text-decoration: underline; 
+   color: #0056b3; 
+ }
+ #contact-info a {
+   color: white; 
+   text-decoration: none; /
+ }
+ 
+ #contact-info a:hover, #contact-info a:focus {
+   text-decoration: underline; 
+ }
+ /* Preloader styles */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://i.gifer.com/5ARz.gif');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.title-animation {
+  font-family: 'Arial', sans-serif;
+  font-size: 5.5rem;
+  background-color: #ffa31a;
+  color: black; /* Dark text */
+  opacity: 0;
+  animation: fadeIn 2s forwards, slideUp 2s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+      transform: translateY(50px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+#intro {
+  background-color: rgba(0, 0, 0, 0.712);
+}
+#my {
+  background-color: black;
+  color: white;
+}
+
